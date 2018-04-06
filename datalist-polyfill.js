@@ -275,6 +275,7 @@
           // set the polyfilling selects border-radius equally as the one by the polyfilled input
           dataListSelect.style.borderRadius = inputStyles.getPropertyValue('border-radius');
           dataListSelect.style.minWidth = rects[0].width + 'px';
+          dataListSelect.style.zIndex = 9999;
 
           if (touched) {
             var messageElement = document.createElement('option');
